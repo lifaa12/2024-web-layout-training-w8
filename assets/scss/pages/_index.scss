@@ -1,0 +1,137 @@
+.navbar {
+  .container-xl {
+    box-shadow: 0 2px 40px #0068ff1a;
+  }
+  form {
+    width: 425px;
+    input {
+      padding-top: 22px;
+      padding-bottom: 22px;
+    }
+  }
+}
+.banner-swiper {
+  width: 100%;
+  height: 800px;
+  margin-bottom: 72px;
+  @media (max-width: 1150px) {
+    height: 600px;
+  }
+  @include mobile {
+    height: 400px;
+    margin-bottom: 0;
+  }
+  .swiper-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+    > a {
+      padding: 32px 80px 32px 120px;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 80px;
+      @media (max-width: 1105px) {
+        padding: 32px 50px 32px 50px;
+      }
+    }
+    @include mobile {
+      border-radius: 0;
+      > a {
+        padding: 16px 0;
+        right: 0;
+        text-align: center;
+        border-radius: 0;
+      }
+    }
+  }
+  .banner-swiper-prev {
+    left: 10%;
+  }
+  .banner-swiper-next {
+    right: 10%;
+  }
+
+  .filter {
+    background: #ededed;
+    opacity: 70%;
+    z-index: 99;
+  }
+  .filter.act {
+    opacity: 0 !important;
+  }
+  .banner-badge {
+    top: 587px;
+    left: 40px;
+    @media (max-width: 1150px) {
+      top: 387px;
+    }
+    @include mobile {
+      top: 230px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+    }
+  }
+}
+.fundraising-card__title {
+  margin-top: 160px;
+  @include pad {
+    margin-top: 0;
+  }
+}
+.fundraising-card__deco > img {
+  left: -100px;
+  @include pad {
+    display: none;
+  }
+  @include mobile {
+    display: block;
+    width: 200px;
+  }
+}
+.fundraising-tab-mb {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.fundraising-card-mb .swiper-pagination {
+  bottom: 0 !important;
+}
+.course-sort__bg {
+  max-width: 1656px;
+  border-radius: 80px;
+  @media (max-width: 1700px) {
+    width: 95%;
+  }
+}
+.course-sort__title {
+  @media (max-width: 576px) {
+    color: #fff;
+  }
+}
+.index-teacher__deco {
+  padding-bottom: 400px;
+  @include pad {
+    padding-bottom: 120px;
+  }
+}
+.recommend-swiper {
+  height: 440px;
+  .recommend-swiper-prev {
+    left: 0;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+  .recommend-swiper-next {
+    right: -4%;
+    @media (max-width: 1200px) {
+      display: none;
+    }
+  }
+}
+.course-sort-mb {
+  overflow-x: auto;
+  white-space: nowrap;
+  .badge-card {
+    width: 272px;
+  }
+}

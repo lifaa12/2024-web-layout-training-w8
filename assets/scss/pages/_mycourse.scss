@@ -1,0 +1,44 @@
+.dashboard-avatar {
+  width: 100px;
+  @include mobile {
+    width: 80px;
+  }
+}
+.dashboard-bg {
+  .nav-link.active {
+    color: $primary-100 !important;
+    background: $primary-10;
+    border-radius: 12px;
+  }
+}
+.mycourse-tab {
+  .nav-link.active {
+    color: $primary-100 !important;
+    padding-bottom: 12px !important;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 4px;
+      background: $primary-100;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+    }
+  }
+}
+.course-list {
+  @include pad {
+    overflow-x: auto;
+    white-space: nowrap;
+    .rounded-card__wrap {
+      min-width: 300px;
+      width: 300px;
+      .rounded-card-title {
+        white-space: normal;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.footer-bg {
+  padding: 100px 0;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  @include mobile {
+    padding: 48px 0;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+  }
+}

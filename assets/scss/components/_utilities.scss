@@ -1,0 +1,29 @@
+.lp-2 {
+  letter-spacing: 0.02em;
+}
+.point {
+  cursor: pointer;
+}
+.f-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.f-bc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fc {
+  display: flex;
+  flex-direction: column;
+}
+.card-shadow {
+  box-shadow: 0px 25px 50px -12px #0000001f;
+}
+.transy-50 {
+  transform: translate(0, -50%);
+}
+.trans-50 {
+  transform: translate(-50%, -50%);
+}

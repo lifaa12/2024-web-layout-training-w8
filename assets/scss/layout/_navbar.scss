@@ -1,0 +1,18 @@
+.nav-logo {
+  width: 200px;
+  height: 32px;
+  @media (max-width: 1045px) {
+    width: 150px;
+    height: 25px;
+  }
+  @include mobile {
+    width: 125px;
+    height: 20px;
+  }
+}
+.container-xl {
+  border-radius: 100px;
+  @include pad {
+    border-radius: 0;
+  }
+}

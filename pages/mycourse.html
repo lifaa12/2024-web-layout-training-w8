@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>切版直播班第八週作業</title>
+</head>
+
+<body>
+  <%- include("layout/navbar.ejs") %>
+    <div class="dashboard-bg bg-gray-10 pt-8 py-lg-95">
+      <div class="container-xl">
+        <div class="d-flex align-items-center justify-content-md-between gap-2 mb-6">
+          <div class="d-flex align-items-center gap-lg-6">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-1.png?raw=true"
+              alt="avatar" class="dashboard-avatar">
+            <div class="fc">
+              <p class="fs-3 fs-md-1 mb-0 mb-lg-4 lh-sm fw-bold">Jessica</p>
+              <ul class="nav justify-content-between d-none d-lg-flex">
+                <li class="nav-item">
+                  <a class="text-gray-60 fw-bold nav-link py-4 px-7 active" href="#">
+                    <span class="material-symbols-outlined align-middle">
+                      folder
+                    </span>
+                    我的課程
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-gray-60 fw-bold nav-link py-4 px-7 " href="#">
+                    <i class="bi bi-bookmark-fill align-middle"></i>
+                    我的收藏
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="text-gray-60 fw-bold nav-link py-4 px-7 " href="#">
+                    <span class="material-symbols-outlined align-middle">
+                      edit
+                    </span>
+                    作品成果
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav justify-content-between d-none d-lg-flex">
+            <li class="nav-item p-3 text-center">
+              <p class="fs-8 text-gray-80 fw-bold mb-1">我的課程</p>
+              <span class="fs-1 fw-bold">4</span>
+              </a>
+            </li>
+            <li class="nav-item p-3 text-center">
+              <p class="fs-8 text-gray-80 fw-bold mb-1">我的收藏</p>
+              <span class="fs-1 fw-bold">2</span>
+            </li>
+            <li class="nav-item p-3 text-center">
+              <p class="fs-8 text-gray-80 fw-bold mb-1">作品成果</p>
+              <span class="fs-1 fw-bold">5</span>
+            </li>
+          </ul>
+        </div>
+        <ul class="nav justify-content-between mb-7 d-lg-none">
+          <li class="nav-item">
+            <a class="text-gray-60 fw-bold nav-link p-3 active" href="#">
+              <span class="material-symbols-outlined align-middle">
+                folder
+              </span>
+              我的課程
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="text-gray-60 fw-bold nav-link p-3 " href="#">
+              <i class="bi bi-bookmark-fill align-middle"></i>
+              我的收藏
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="text-gray-60 fw-bold nav-link p-3 " href="#">
+              <span class="material-symbols-outlined align-middle">
+                edit
+              </span>
+              作品成果
+            </a>
+          </li>
+        </ul>
+        <ul class="nav justify-content-between d-lg-none">
+          <li class="nav-item p-3 text-center">
+            <p class="fs-8 text-gray-80 fw-bold mb-1">我的課程</p>
+            <span class="fs-1">4</span>
+            </a>
+          </li>
+          <li class="nav-item p-3 text-center">
+            <p class="fs-8 text-gray-80 fw-bold mb-1">我的收藏</p>
+            <span class="fs-1">2</span>
+          </li>
+          <li class="nav-item p-3 text-center">
+            <p class="fs-8 text-gray-80 fw-bold mb-1">作品成果</p>
+            <span class="fs-1">5</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-xl pt-8 pb-10">
+      <ul class="nav justify-content-between justify-content-lg-start gap-lg-7 mycourse-tab mb-8">
+        <li class="nav-item">
+          <a class="nav-link text-gray-80 p-0 fw-bold active" href="#">所有課程 (4)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-80 p-0 fw-bold" href="#">正在上課中</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-80 p-0 fw-bold" href="#">等待開課</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-gray-80 p-0 fw-bold" href="#">已完課</a>
+        </li>
+      </ul>
+      <div class="course-list d-flex d-lg-none gap-4">
+        <div class="rounded-card__wrap">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <span
+              class="badge rounded-pill bg-alert-10 text-alert-100 fs-8 lh-sm fw-bold py-2 px-3 position-absolute">限時8折
+              🔥</span>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="rounded-card-title fw-bold mb-4">小白也會！從零開始學習 Python 程式設計 </h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-card__wrap">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <span
+              class="badge rounded-pill bg-alert-10 text-alert-100 fs-8 lh-sm fw-bold py-2 px-3 position-absolute">限時8折
+              🔥</span>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-6.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="rounded-card-title fw-bold mb-4">全面掌握 JavaScript 開發技術</h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-card__wrap">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-7.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="rounded-card-title fw-bold mb-4">HTML & CSS 網頁設計基礎教程</h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-card__wrap">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-8.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="rounded-card-title fw-bold mb-4">更進一步！深入學習 Node.js 與後端開發</h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-none d-lg-flex">
+        <div class="col-lg-6 col-xl-3 mb-4">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <span
+              class="badge rounded-pill bg-alert-10 text-alert-100 fs-8 lh-sm fw-bold py-2 px-3 position-absolute">限時8折
+              🔥</span>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-5.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="fw-bold mb-4 ">小白也會！從零開始學習 Python 程式設計 </h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3 mb-4">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <span
+              class="badge rounded-pill bg-alert-10 text-alert-100 fs-8 lh-sm fw-bold py-2 px-3 position-absolute">限時8折
+              🔥</span>
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-6.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="fw-bold mb-4 ">全面掌握 JavaScript 開發技術</h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3 mb-4">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-7.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="fw-bold mb-4 ">HTML & CSS 網頁設計基礎教程</h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-3 mb-4">
+          <div class="rounded-card card-shadow rounded-5 position-relative mb-6">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/course-8.png?raw=true"
+              alt="course" class="w-100 ">
+            <div class="card-content py-6 px-4">
+              <h6 class="fw-bold mb-4 ">更進一步！深入學習 Node.js 與後端開發</h6>
+              <div class="d-flex justify-content-between pb-4 border-bottom border-gray-40">
+                <div class="d-flex align-items-center gap-2">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-learning/avatar-2.png?raw=true"
+                    alt="avatar">
+                  <span>Kelly Hsu</span>
+                </div>
+                <div class="fc align-items-end">
+                  <h6 class="fw-bold m-0 text-primary-100">NT$ 2,480</h6>
+                  <span class="text-gray-60 fs-8" style="text-decoration: line-through;">NT$ 3,200</span>
+                </div>
+              </div>
+              <div class="f-bc pt-4">
+                <div class="fc">
+                  <span
+                    class="badge rounded-pill lh-sm bg-gray-40 text-gray-80 py-1 px-3 align-self-baseline mb-1">程式開發</span>
+                  <span class="text-gray-80 fs-8 ">已有 420 位同學加入</span>
+                </div>
+                <div class="d-flex gap-1 align-items-center">
+                  <span class="material-symbols-outlined" style="color: #F6BD2B;font-size: 12px;">
+                    star
+                  </span>
+                  <span class="fs-8">4.0</span>
+                  <span class="fs-8 text-gray-60 ">(333)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("layout/footer.ejs") %>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>
